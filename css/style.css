@@ -248,6 +248,7 @@ figure {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
+        background-position-y: 120px;
         min-height: 400px;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
@@ -283,9 +284,9 @@ figure {
       z-index: 9; }
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
-        vertical-align: middle;
+        vertical-align: top;
         min-height: 700px;
-        padding: 2.5em;
+        padding: 2.3em;
         position: relative; }
         @media screen and (max-width: 768px) {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
@@ -297,7 +298,7 @@ figure {
           font-family: "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
-          font-size: 60px;
+          font-size: 50px;
           line-height: 1.3;
           font-weight: 700; }
           @media screen and (max-width: 768px) {
@@ -428,8 +429,8 @@ body.offcanvas {
 
 .about-img {
   width: 100%;
-  height: 600px;
-  margin-bottom: 30px; }
+  height: 1000px;
+  margin-bottom: 25px; }
 
 .about-desc h3 {
   font-size: 18px;
