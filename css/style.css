@@ -249,6 +249,7 @@ figure {
         background-size: cover;
         background-position: bottom center;
         background-position-y: 120px;
+        background-position-x: -140px;
         min-height: 400px;
         position: relative; }
     #colorlib-hero .flexslider .flex-control-nav {
