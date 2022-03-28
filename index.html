@@ -50,6 +50,7 @@
 	<![endif]-->
 
 	</head>
+	
 	<body>
 	<div id="colorlib-page">
 		<div class="container-wrap">
@@ -292,12 +293,24 @@
 					            </div>
 					         </article>
 
+							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+										<h2><a href="/James_Sheehan_Resume.pdf" download="James_Sheehan_Resume.pdf"><Button class="csv-button">Download CSV</Button></a></h2>
+					               </div>
+					            </div>
+					         </article>
+
 					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
 					               </div>
 					            </div>
 					         </article>
+
 					      </div>
 					   </div>
 				   </div>
@@ -402,21 +415,27 @@
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
+									<!-- Email Hosting Service: https://postmail.invotes.com/accounts/manage/f9be5bc8-8bcf-4f15-8fd0-4a3c45aa1e0a -->
+									<form action="https://postmail.invotes.com/send" method="post" id="email_form">
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+											<input type="text" name="extra_name" class="form-control" placeholder="Name" />
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+											<input type="text" name="extra_email" class="form-control" placeholder="Email" />
 										</div>
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
+											<input type="text" name="subject" class="form-control" placeholder="Subject" />
 										</div>
 										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+											<textarea id="message" name="text" class="form-control" placeholder="Message"></textarea>
+										</div>
+										<div>
+    										<input type="hidden" name="access_token" value="oncmgwofoatq3uq0hgyi3c3g" />
+    										<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    										<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
 										</div>
 										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+											<input id="submit_form" type="submit" class="btn btn-primary btn-send-message" value="Send"  />
 										</div>
 									</form>
 								</div>
